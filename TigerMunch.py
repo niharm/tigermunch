@@ -345,53 +345,7 @@ def parse_query(query):
        "what is the time": "hour",
        "what time is it": "hour",
        "who made this app": "Why, it was Nihar, of course! Nihar is awesome.",
-       "meaning of life": "To surround yourself with beautiful people and beautiful ideas.",
-       "fuck": "Watch your fucking language yo!",
-       "penis": "8=========================> \n mine's bigger",
-       "vagina": "penis",
-       "nihar": "NIHAR IS ONE COOL DAD. HE MADE ME.",
-       "bitch": "What did you ask about a female dog?",
-       "damn": "Watch your damn language yo!",
-       "asshole": "You're an asshole!",
-       "hottest indian": "Shubhro Saha.",
-       "sexiest indian": "Karthik.. I mean Shubhro Saha.",
-       "streets of cleveland": "Why none other than Mr. Tejas.",
-       "you suck": "I am literally a app.",
-        "i hate you": "I am literally a app.",
-        "i hate nihar": "He's so cool though!.",
-        "nihar sucks": "He's so cool though!.",
-        "dick": "8=========================> \n mine's bigger.",
-        "cock": "8=========================> \n mine's bigger.",
-       "hide a dead body": "Firestone. No one would ever check.",
-       "hide my dead body": "Firestone. No one would ever check.",
-       "i want to fuck you": "I want to love you more.",
-       "i love you": "I love you more!!!!!",
-       "i love her": "Ask her out!",
-       "i'm hungry": "omg eat food or something!",
-       "im hungry": "omg eat food or something!",
-       "you're the best": "no you're the best!",
-       "youre the best": "no youre the best!",
-       "your the best": "no your the best!",
-       "you're cute": "no you're cute!!",
-       
        }
-    
-      
-    # search for laundry
-    if "laundry" in query:
-       # set type to laundry
-       type = "laundry"
-       # find and set laundry station
-       for key in laundry_stations:
-          if key in query:
-              station = laundry_stations[key]
-              return[type, station]
-            
-       # exception case - if no laundry room found
-       type = "exception"
-       exception_name = "What, do you think I have a laundry room up my ass? Try again, and specify a room this time!"
-       return[type, exception_name]
-
 
     #dhall case
     for key in dhalls:
